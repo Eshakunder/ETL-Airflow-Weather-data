@@ -1,14 +1,34 @@
-.git
-.env
-.DS_Store
-airflow_settings.yaml
+# Python
 __pycache__/
-astro
-.venv
-.astro/standalone/
-airflow-webserver.pid
-webserver_config.py
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# Environment variables (VERY IMPORTANT)
+.env
+
+# macOS
+.DS_Store
+
+# Airflow
 airflow.cfg
 airflow.db
+airflow-webserver.pid
+webserver_config.py
+
+# Astro (Astronomer)
+.astro/
+astro
+
+# Astro local override files
 .astro/*.local.yml
 .astro/*.local.yaml
+
+# Airflow settings (optional, ignore if auto-generated)
+airflow_settings.yaml
+
+# Git
+.git
